@@ -1,0 +1,13 @@
+StylePtr<Layers<
+  DodgerBlue,
+  AlphaL<Stripes<1000,-1000,White,DodgerBlue>,SwingSpeed<350>>,
+  AlphaL<Stripes<1000,1000,White,DodgerBlue>,Scale<IsLessThan<SwingSpeed<350>,Int<16384>>,Int<0>,BladeAngle<16384>>>,
+  AlphaL<Stripes<1000,-1000,White,DodgerBlue>,Scale<BladeAngle<0,16384>,Int<32768>,Int<0>>>,
+  TransitionEffectL<TrConcat<TrInstant,BrownNoiseFlickerL<AlphaL<White,Int<16000>>,Int<50>>,TrSmoothFade<600>>,EFFECT_LOCKUP_END>,
+  ResponsiveLockupL<Strobe<White,BrownNoiseFlicker<White,Blue,300>,50,1>,TrConcat<TrInstant,White,TrFade<400>>,TrFade<100>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Scale<SwingSpeed<100>,Int<10000>,Int<14000>>>,
+  ResponsiveStabL<Orange>,
+  ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,
+  ResponsiveClashL<White,TrInstant,TrFade<400>>,
+  LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,
+  LockupTrL<AlphaL<Mix<TwistAngle<>,Rgb<255,200,0>,DarkOrange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,
+  InOutTrL<TrWipe<300>,TrWipeIn<500>>>>()
